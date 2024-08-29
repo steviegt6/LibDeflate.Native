@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>LibDeflate.Native</id>
+    <id>Tomat.LibDeflate.Native</id>
     <version>1.21.0</version>
     <authors>jzebedee, tomat</authors>
     <license type="expression">MIT</license>
