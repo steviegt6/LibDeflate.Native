@@ -2,11 +2,11 @@
 <package>
   <metadata>
     <id>LibDeflate.Native</id>
-    <version>1.19.0</version>
-    <authors>jzebedee</authors>
+    <version>1.21.0</version>
+    <authors>jzebedee, tomat</authors>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/jzebedee/LibDeflate.Native</projectUrl>
-    <description>LibDeflate.NET dependency containing all supported native binaries of libdeflate</description>
+    <projectUrl>https://github.com/steviegt6/LibDeflate.Native</projectUrl>
+    <description>Tomat.FNB.Deflate dependency containing all supported native binaries of libdeflate</description>
     <tags>libdeflate libdeflate.net deflate zlib gzip gz native</tags>
     <repository type="git" url="https://github.com/jzebedee/LibDeflate.Native.git" />
   </metadata>
