@@ -41,6 +41,6 @@ jobs:
           name: LibDeflate.Native
           path: pkg/*
       - name: Publish the package to GPR
-        run: dotnet nuget push pkg/*.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/jzebedee/index.json --skip-duplicate
+        run: dotnet nuget push pkg/*.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/steviegt6/index.json --skip-duplicate
       - name: Publish the package to NuGet
         run: dotnet nuget push pkg/*.nupkg -k ${{ secrets.LIBDEFLATE_NUGET_TOKEN }} -s https://api.nuget.org/v3/index.json --skip-duplicate
