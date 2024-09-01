@@ -19,6 +19,13 @@
       <Pack>false</Pack>
     </Content>
   </ItemGroup>
+  <ItemGroup Condition=" '$(RuntimeIdentifier)' == '' AND '$(OS)' == 'Unix' AND Exists('/Library/Frameworks') ">
+    <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\osx\native\libdeflate.dylib">
+      <Link>runtimes\osx\native\libdeflate.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+  </ItemGroup>
   <ItemGroup Condition=" '$(RuntimeIdentifier)' == '' AND '$(OS)' == 'Unix' AND !Exists('/Library/Frameworks') ">
     <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\linux-x86\native\libdeflate.so">
       <Link>runtimes\linux-x86\native\libdeflate.so</Link>
