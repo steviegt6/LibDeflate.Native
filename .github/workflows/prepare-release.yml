@@ -135,6 +135,11 @@ jobs:
         name: 'osx.11.0'
         path: build/libdeflate.dylib
         if-no-files-found: error
+    - uses: actions/upload-artifact@v3
+      with:
+        name: 'osx'
+        path: build/libdeflate.dylib
+        if-no-files-found: error
 
   # windows-msys2-build-and-test:
   #   name: Build and test (Windows, MSYS2, ${{matrix.sys}})
