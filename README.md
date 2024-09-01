@@ -1,4 +1,4 @@
-# LibDeflate.Native [![nuget stable](https://img.shields.io/nuget/v/Tomat.LibDeflate.Native.svg?style=flat)](https://www.nuget.org/packages/Tonat.LibDeflate.Native)
+# LibDeflate.Native [![nuget stable](https://img.shields.io/nuget/v/Tomat.LibDeflate.Native.svg?style=flat)](https://www.nuget.org/packages/Tomat.LibDeflate.Native)
 
 This package is a [LibDeflate.NET](https://github.com/jzebedee/LibDeflate.NET) dependency containing all supported native binaries of [libdeflate](https://github.com/ebiggers/libdeflate).
 
