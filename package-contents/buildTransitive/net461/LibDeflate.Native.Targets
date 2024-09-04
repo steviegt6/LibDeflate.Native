@@ -11,6 +11,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Pack>false</Pack>
     </Content>
+    <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-arm64\native\libdeflate.dll">
+      <Link>runtimes\win-arm64\native\libdeflate.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
   </ItemGroup>
   <ItemGroup Condition=" '$(RuntimeIdentifier)' == '' AND '$(OS)' == 'Unix' AND Exists('/Library/Frameworks') ">
     <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\osx.11.0\native\libdeflate.dylib">
