@@ -229,9 +229,8 @@ jobs:
       with:
         repository: 'ebiggers/libdeflate'
         ref: ${{ github.event.inputs.tag }}
-    # Ensure you have a toolchain file for aarch64
+    - uses: microsoft/setup-msbuild@v2
     - name: ARM64 build
-      uses: microsoft/setup-msbuild@v2
       run: |
         scripts/cmake-helper.sh -DLIBDEFLATE_BUILD_TESTS=1 \
             -G "Visual Studio 17 2022" \
