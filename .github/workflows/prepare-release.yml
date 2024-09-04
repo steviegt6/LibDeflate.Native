@@ -229,12 +229,9 @@ jobs:
       with:
         repository: 'ebiggers/libdeflate'
         ref: ${{ github.event.inputs.tag }}
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y gcc-mingw-w64-aarch64 libz-mingw-w64-dev
     # Ensure you have a toolchain file for aarch64
     - name: ARM64 build
+    - uses: microsoft/setup-msbuild@v2
       run: |
         scripts/cmake-helper.sh -DLIBDEFLATE_BUILD_TESTS=1 \
             -G "Visual Studio 17 2022" \
