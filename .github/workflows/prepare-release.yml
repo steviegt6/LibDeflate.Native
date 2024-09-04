@@ -237,6 +237,7 @@ jobs:
         -DCMAKE_INSTALL_PREFIX=build\install
     - run: cmake --build build --verbose --config Release
     - run: cmake --install build --verbose --config Release
+    - run: copy build/deflate.dll build/libdeflate.dll
     - uses: actions/upload-artifact@v3
       with:
         name: 'win-arm64'
