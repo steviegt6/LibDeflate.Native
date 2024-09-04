@@ -223,6 +223,7 @@ jobs:
     runs-on: windows-latest
     env:
       CFLAGS: -Werror -DLIBDEFLATE_ENABLE_ASSERTIONS
+      DESTDIR: build/install
     steps:
     - uses: actions/checkout@v3
       name: Checkout libdeflate
@@ -234,7 +235,7 @@ jobs:
       run: |
         scripts/cmake-helper.sh -DLIBDEFLATE_BUILD_TESTS=1
         cmake --build build --verbose -G "Visual Studio 17 2022" -T "v143" -A "ARM64" -DCMAKE_C_FLAGS="/W4 /WX" -DCMAKE_INSTALL_PREFIX=build\install
-        DESTDIR=build/install cmake --install build --verbose
+        cmake --install build --verbose
     - uses: actions/upload-artifact@v3
       with:
         name: 'win-arm64'
